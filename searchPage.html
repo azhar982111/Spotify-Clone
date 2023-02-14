@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Search</title>
+    <link rel="stylesheet" href="./searchPage.css">
+    <link rel="stylesheet" href="./upBar/upbar.css">
+    <link rel="stylesheet" href="./web_player/sidewebplayer.css">
+   
+</head>
+<body>
+    
+    <div id="up-bar">
+      
+    </div>
+
+    <input oninput="debounce(fetchData,2000)" type="text" placeholder="Artists, songs,or podcasts" id="inputSearch">
+<div>
+
+
+    <div id="side_bar">
+        <div id="side_image">
+            <img src="./web_player/Screenshot 2022-05-22 102301.png" alt="">
+
+        </div>
+        <div id="side_home" class="sidebar_div">
+            <img src="./web_player/home.png" alt="">
+          <a href="./HomePage/homePage.html" class="sidebar_div_a"> <b>Home</b></a> 
+        </div>
+        <div id="side_search" class="sidebar_div">
+            <img src="./web_player/search.png" alt="">
+           <a href="./search.html" class="sidebar_div_a"><b>Search</b></a> 
+        </div>
+        <div id="side_library" class="sidebar_div">
+            <img src="./web_player/playlist.png" alt="">
+            <a href="./libary/libary.html" class="sidebar_div_a"><b> Your Library</b></a> 
+        </div>
+        <div id="side_playlist" class="sidebar_div">
+            <img src="./web_player/Screenshot 2022-05-26 170202.png" alt="">
+           <a id="create_playlist" onclick="addplaylist()"><b>Create Playlist</b> </a>
+        </div>
+        <div id="side_like" class="sidebar_div">
+            <img src="./web_player/line.png" alt="">
+            <a href="./likepage/like_page.html" class="sidebar_div_a"><b> Liked Songs</b></a> 
+        </div>
+       <div id="br"></div>
+      <div id="palylist_container">
+
+       </div>
+
+    </div>
+
+
+
+
+    <div id="topResultElement">
+        <div>
+            <h2 class="headElement">Top Results</h2>
+            <div id="topResult">
+            </div>
+        </div>
+
+        <div>
+            <h2 class="headElement">Songs</h2>
+            <div id="songs">
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+    <h2 class="headElement">Artists</h2>
+    <div id="artists" > 
+
+    </div>
+
+    <h2 class="headElement">Albums</h2>
+    <div id="albums">
+
+    </div>
+
+    <h2 class="headElement">Playlists</h2>
+    <div id="playlists">
+
+    </div>
+
+    <h2 class="headElement">Episode</h2>
+    <div id="episodes">
+
+    </div>
+
+</div>
+</body>
+<script type="module" src="./searchPage.js"></script>
+<script type="module" src="./component/getNavbar.js"></script>
+<script type="module" src="./web_player/sidewebplayer.js"></script>
+</html>
+

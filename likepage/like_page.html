@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./like_page.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../web_player/sidewebplayer.css">
+</head>
+
+<body>
+    
+    <div id="side_bar">
+        <div id="side_image">
+            <img src="../web_player/Screenshot 2022-05-22 102301.png" class="sidebar_div_a">
+        </div>
+        <div id="side_home" class="sidebar_div">
+            <img src="../web_player/home.png" alt="">
+          <a href="../HomePage/homePage.html" class="sidebar_div_a" style="background: none;"> <b>Home</b></a> 
+        </div>
+        <div id="side_search" class="sidebar_div">
+            <img src="../web_player/search.png" alt="">
+           <a href="../search.html" class="sidebar_div_a"><b>Search</b></a> 
+        </div>
+        <div id="side_library" class="sidebar_div">
+            <img src="../web_player/playlist.png" alt="">
+            <a href="../libary/libary.html" class="sidebar_div_a"><b> Your Library</b></a> 
+        </div>
+        <div id="side_playlist" class="sidebar_div">
+            <img src="../web_player/Screenshot 2022-05-26 170202.png" alt="">
+           <a id="create_playlist" onclick="addplaylist()"><b>Create Playlist</b> </a>
+        </div>
+        <div id="side_like" class="sidebar_div">
+            <img src="../web_player/line.png" alt="">
+            <a href="./like_page.html" class="sidebar_div_a"><b> Liked Songs</b></a> 
+        </div>
+       <div id="br"></div>
+      <div id="palylist_container">
+
+       </div>
+
+    </div>
+    <div id="like_song_cont">
+        <div id="details_like">
+            <div id="like_emojidiv">
+                <img src="likesong.png" alt="">
+            </div>
+
+            <div id="like_heading">
+                <b>PLAYLIST</b>
+                <h1>Liked Songs</h1>
+                <b id="owoner_name"></b>
+            </div>
+
+        </div>
+        <div id="like_button">
+            <div id="div_likebutton">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="song_name">
+            <div id="title">
+        
+                <div id="titleHead">
+                    <div>
+                        <h4 style="font-size: 15px; margin-left:20px ;">#</h4>
+                    </div>
+                    <div>
+                        <p style="font-size: 15px; margin-left:50px ;">Title</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 17px;margin-left: 830px">⏱</p>
+                    </div>
+
+                </div>
+        <div id="display_song">
+
+        </div>
+        
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./likepage.js"></script>
+<script src="../web_player/sidewebplayer.js"></script>
+
+</html>
